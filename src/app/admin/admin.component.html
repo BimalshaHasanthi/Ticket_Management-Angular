@@ -1,0 +1,65 @@
+<!-- <h1>Admin Page</h1>
+<form>
+  <div>
+    <label for="name">Name:</label>
+  </div>
+  <div>
+    <label for="address">Address:</label>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+  </div>
+  <button type="button" (click)="addConfigurations()">Add</button>
+</form> -->
+
+<!-- admin.component.html -->
+<div class="admin-container">
+  <h1>Admin Configurations</h1>
+
+  <div class="input-fields">
+    <!-- <label for="config1">Configuration 1</label>
+    <p-inputText id="config1" [(ngModel)]="config1"></p-inputText>
+
+    <label for="config2">Configuration 2</label>
+    <p-inputText id="config2" [(ngModel)]="config2"></p-inputText>
+
+    <label for="config3">Configuration 3</label>
+    <p-inputText id="config3" [(ngModel)]="config3"></p-inputText>
+
+    <label for="config4">Configuration 4</label>
+    <p-inputText id="config4" [(ngModel)]="config4"></p-inputText> -->
+
+    <p-floatLabel>
+      <input pInputText id="totalTickets" [(ngModel)]="value1" />
+      <label for="totalTickets">Total Number of Tickets </label>
+    </p-floatLabel>
+    <br>
+
+    <p-floatLabel>
+      <input pInputText id="ticketReleaseRate" [(ngModel)]="value2" />
+      <label for="ticketReleaseRate">Ticket Release Rate </label>
+    </p-floatLabel>
+    <br>
+
+    <p-floatLabel>
+      <input pInputText id="customerRetrievalRate" [(ngModel)]="value3" />
+      <label for="customerRetrievalRate">Customer Retrieval Rate </label>
+    </p-floatLabel>
+    <br>
+
+    <p-floatLabel>
+      <input pInputText id="maxTicketCapacity" [(ngModel)]="value4" />
+      <label for="maxTicketCapacity">Maximum Ticket Capacity </label>
+    </p-floatLabel>
+  </div>
+  <br>
+
+  <!-- <button
+    pButton
+    type="button"
+    label="Add Configurations"
+    (click)="addConfigurations()"
+  ></button> -->
+
+  <p-button label="Submit" icon="pi pi-check" (onClick)="addConfigurations()" />
+</div>

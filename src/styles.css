@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.content {
+    padding: 2rem;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .p-field {
+    margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,99 @@
+<h1>Vendor Details</h1>
+
+<div class="vendor-container">
+  <!-- Add Customer -->
+  <div class="card">
+    <h2>Add Vendor</h2>
+    <div class="form-group">
+      <label for="add-id">Vendor ID</label>
+      <input pInputText id="add-id" [(ngModel)]="value1" />
+    </div>
+    <div class="form-group">
+      <label for="add-name">Vendor Name</label>
+      <input pInputText id="add-name" [(ngModel)]="value2" />
+    </div>
+    <div class="form-group">
+      <label for="add-email">Vendor Address</label>
+      <input pInputText id="add-email" [(ngModel)]="value3" />
+    </div>
+    <div class="form-group">
+      <label for="add-phone">Vendor Number</label>
+      <input pInputText id="add-phone" [(ngModel)]="value4" />
+    </div>
+    <p-button label="Add" icon="pi pi-plus" (onClick)="addVendor()"></p-button>
+  </div>
+
+  <!-- Edit Customer -->
+  <div class="card">
+    <h2>Edit Vendor</h2>
+    <div class="form-group">
+      <label for="edit-id">Vendor ID</label>
+      <input pInputText id="edit-id" [(ngModel)]="value1" />
+    </div>
+    <div class="form-group">
+      <label for="edit-name">Vendor Name</label>
+      <input pInputText id="edit-name" [(ngModel)]="value2" />
+    </div>
+    <div class="form-group">
+      <label for="edit-email">Vendor Address</label>
+      <input pInputText id="edit-email" [(ngModel)]="value3" />
+    </div>
+    <div class="form-group">
+      <label for="edit-phone">Vendor Number</label>
+      <input pInputText id="edit-phone" [(ngModel)]="value4" />
+    </div>
+    <p-button
+      label="Edit"
+      icon="pi pi-pencil"
+      (onClick)="editVendor()"
+    ></p-button>
+  </div>
+
+  <!-- Delete Customer -->
+  <div class="card">
+    <h2>Delete Vendor</h2>
+    <div class="form-group">
+      <label for="delete-id">Vendor ID</label>
+      <input pInputText id="delete-id" [(ngModel)]="value1" />
+    </div>
+    <div class="form-group">
+      <label for="delete-name">Vendor Name</label>
+      <input pInputText id="delete-name" [(ngModel)]="value2" />
+    </div>
+    <div class="form-group">
+      <label for="delete-email">Vendor Address</label>
+      <input pInputText id="delete-email" [(ngModel)]="value3" />
+    </div>
+    <div class="form-group">
+      <label for="delete-phone">Vendor Number</label>
+      <input pInputText id="delete-phone" [(ngModel)]="value4" />
+    </div>
+    <p-button
+      label="Delete"
+      icon="pi pi-trash"
+      (onClick)="deleteVendor()"
+    ></p-button>
+  </div>
+</div>
+
+<!-- All Customers -->
+<div class="table-container">
+  <p-table [value]="product1" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Vendor Id</th>
+        <th>Vendor Name</th>
+        <th>Vendor Address</th>
+        <th>Vendor Number</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+      <tr>
+        <td>{{ product.cId }}</td>
+        <td>{{ product.cName }}</td>
+        <td>{{ product.cAddress }}</td>
+        <td>{{ product.cNumber }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
