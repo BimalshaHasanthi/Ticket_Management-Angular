@@ -19,6 +19,8 @@ export class CustomerComponent {
   value2: String = '';
   value3: String = '';
   value4: String = '';
+  value5: String = '';
+
 
   // product1: String = '';
   product1 = [

@@ -34,6 +34,7 @@ import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ButtonModule } from 'primeng/button';
     ButtonModule,
     FormsModule,
     RouterModule.forRoot(routes),
+    // BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

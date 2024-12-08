@@ -4,16 +4,16 @@
 <!-- First Row: Four Cards with equal size -->
 <div class="card-container">
   <p-card header="Total Number Of Tickets">
-    <p class="m-0">20</p>
+    <p class="m-0 large-number">20</p>
   </p-card>
   <p-card header="Ticket Release Rate">
-    <p class="m-0">12</p>
+    <p class="m-0 large-number">12</p>
   </p-card>
   <p-card header="Customer Retrieval Rate">
-    <p class="m-0">8</p>
+    <p class="m-0 large-number">8</p>
   </p-card>
   <p-card header="Maximum Ticket Capacity">
-    <p class="m-0">200</p>
+    <p class="m-0 large-number">200</p>
   </p-card>
   <!-- Simulation Card -->
   <div class="simulation-card">
@@ -42,7 +42,7 @@
 <!-- New //////////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="parameters-simulation-row">
   <div class="card">
-    <h2>Delete Customer</h2>
+    <h2>Configuration</h2>
     <div class="form-group">
       <label for="total-tickets">Total Number Of Tickets</label>
       <input pInputText id="total-tickets" [(ngModel)]="totalTickets" />
@@ -79,25 +79,42 @@
     <form [formGroup]="formGroup">
       <div class="form-group">
         <label for="retrieval-rate">Customer</label>
-        <p-dropdown
+        <!-- <p-dropdown
           formControlName="selectedCustomer"
           [options]="customers"
           optionLabel="name"
+            optionValue="code"
           placeholder="Select Customer"
           [showClear]="true"
-        ></p-dropdown>
+        ></p-dropdown> -->
+        <p-dropdown
+  formControlName="selectedCustomer"
+  [options]="customers"
+  optionLabel="name"
+  optionValue="code"
+  placeholder="Select Customer"
+  [showClear]="true"
+></p-dropdown>
       </div>
     </form>
     <form [formGroup]="formGroup">
       <div class="form-group">
         <label for="retrieval-rate">Ticket</label>
-        <p-dropdown
+        <!-- <p-dropdown
           formControlName="selectedType"
           [options]="types"
           optionLabel="name"
           placeholder="Select Type"
           [showClear]="true"
-        ></p-dropdown>
+        ></p-dropdown> -->
+        <p-dropdown
+  formControlName="selectedType"
+  [options]="types"
+  optionLabel="name"
+  optionValue="code"
+  placeholder="Select Type"
+  [showClear]="true"
+></p-dropdown>
       </div>
     </form>
     <form [formGroup]="formGroup">
