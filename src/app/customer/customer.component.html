@@ -33,19 +33,19 @@
     <h2>Edit Customer</h2>
     <div class="form-group">
       <label for="edit-id">Customer ID</label>
-      <input pInputText id="edit-id" [(ngModel)]="value5" />
+      <input pInputText id="edit-id" [(ngModel)]="value5"  (keydown.enter)="searchCustomerById()" />
     </div>
     <div class="form-group">
       <label for="edit-name">Customer Name</label>
-      <input pInputText id="edit-name" [(ngModel)]="value2" />
+      <input pInputText id="edit-name" [(ngModel)]="value6" />
     </div>
     <div class="form-group">
       <label for="edit-email">Email Address</label>
-      <input pInputText id="edit-email" [(ngModel)]="value3" />
+      <input pInputText id="edit-email" [(ngModel)]="value7" />
     </div>
     <div class="form-group">
       <label for="edit-phone">Phone Number</label>
-      <input pInputText id="edit-phone" [(ngModel)]="value4" />
+      <input pInputText id="edit-phone" [(ngModel)]="value8" />
     </div>
     <p-button
       label="Edit"
@@ -59,19 +59,19 @@
     <h2>Delete Customer</h2>
     <div class="form-group">
       <label for="delete-id">Customer ID</label>
-      <input pInputText id="delete-id" [(ngModel)]="value1" />
+      <input pInputText id="delete-id" [(ngModel)]="value9" (keydown.enter)="searchCustomerById()"  />
     </div>
     <div class="form-group">
       <label for="delete-name">Customer Name</label>
-      <input pInputText id="delete-name" [(ngModel)]="value2" />
+      <input pInputText id="delete-name" [(ngModel)]="value10" />
     </div>
     <div class="form-group">
       <label for="delete-email">Email Address</label>
-      <input pInputText id="delete-email" [(ngModel)]="value3" />
+      <input pInputText id="delete-email" [(ngModel)]="value11" />
     </div>
     <div class="form-group">
       <label for="delete-phone">Phone Number</label>
-      <input pInputText id="delete-phone" [(ngModel)]="value4" />
+      <input pInputText id="delete-phone" [(ngModel)]="value12" />
     </div>
     <p-button
       label="Delete"

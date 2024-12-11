@@ -13,11 +13,11 @@
       <input pInputText id="add-name" [(ngModel)]="value2" />
     </div>
     <div class="form-group">
-      <label for="add-email">Vendor Address</label>
+      <label for="add-email">Email Address</label>
       <input pInputText id="add-email" [(ngModel)]="value3" />
     </div>
     <div class="form-group">
-      <label for="add-phone">Vendor Number</label>
+      <label for="add-phone">Phone Number</label>
       <input pInputText id="add-phone" [(ngModel)]="value4" />
     </div>
     <p-button label="Add" icon="pi pi-plus" (onClick)="addVendor()"></p-button>
@@ -28,19 +28,19 @@
     <h2>Edit Vendor</h2>
     <div class="form-group">
       <label for="edit-id">Vendor ID</label>
-      <input pInputText id="edit-id" [(ngModel)]="value1" />
+      <input pInputText id="edit-id" [(ngModel)]="value5" (keydown.enter)="searchVendorById()"/>
     </div>
     <div class="form-group">
       <label for="edit-name">Vendor Name</label>
-      <input pInputText id="edit-name" [(ngModel)]="value2" />
+      <input pInputText id="edit-name" [(ngModel)]="value6" />
     </div>
     <div class="form-group">
-      <label for="edit-email">Vendor Address</label>
-      <input pInputText id="edit-email" [(ngModel)]="value3" />
+      <label for="edit-email">Email Address</label>
+      <input pInputText id="edit-email" [(ngModel)]="value7" />
     </div>
     <div class="form-group">
-      <label for="edit-phone">Vendor Number</label>
-      <input pInputText id="edit-phone" [(ngModel)]="value4" />
+      <label for="edit-phone">Phone Number</label>
+      <input pInputText id="edit-phone" [(ngModel)]="value8" />
     </div>
     <p-button
       label="Edit"
@@ -54,19 +54,19 @@
     <h2>Delete Vendor</h2>
     <div class="form-group">
       <label for="delete-id">Vendor ID</label>
-      <input pInputText id="delete-id" [(ngModel)]="value1" />
+      <input pInputText id="delete-id" [(ngModel)]="value9"  (keydown.enter)="searchVendorById()"/>
     </div>
     <div class="form-group">
       <label for="delete-name">Vendor Name</label>
-      <input pInputText id="delete-name" [(ngModel)]="value2" />
+      <input pInputText id="delete-name" [(ngModel)]="value10" />
     </div>
     <div class="form-group">
-      <label for="delete-email">Vendor Address</label>
-      <input pInputText id="delete-email" [(ngModel)]="value3" />
+      <label for="delete-email">Email Address</label>
+      <input pInputText id="delete-email" [(ngModel)]="value11" />
     </div>
     <div class="form-group">
-      <label for="delete-phone">Vendor Number</label>
-      <input pInputText id="delete-phone" [(ngModel)]="value4" />
+      <label for="delete-phone">Phone Number</label>
+      <input pInputText id="delete-phone" [(ngModel)]="value12" />
     </div>
     <p-button
       label="Delete"

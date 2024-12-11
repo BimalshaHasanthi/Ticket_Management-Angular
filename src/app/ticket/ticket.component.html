@@ -114,8 +114,8 @@
       <div class="form-group">
         <label for="retrieval-rate">Ticket</label>
         <p-dropdown
-          formControlName="selectedVendor"
-          [options]="vendors"
+          formControlName="selectedTicket"
+          [options]="tickets"
           optionLabel="name"
           placeholder="Select Ticket"
           [showClear]="true"
@@ -136,7 +136,7 @@
         <label for="retrieval-rate">Vendor</label>
         <p-dropdown
           formControlName="selectedVendor"
-          [options]="customers"
+          [options]="vendors"
           optionLabel="name"
           placeholder="Select Vendor"
           [showClear]="true"

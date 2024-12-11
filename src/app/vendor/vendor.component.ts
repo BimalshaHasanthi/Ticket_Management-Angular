@@ -20,6 +20,16 @@ export class VendorComponent {
   value3: String = '';
   value4: String = '';
 
+  value5: String = '';
+  value6: String = '';
+  value7: String = '';
+  value8: String = '';
+
+  value9: String = '';
+  value10: String = '';
+  value11: String = '';
+  value12: String = '';
+
   // product1: String = '';
   product1 = [
     {
@@ -58,6 +68,10 @@ export class VendorComponent {
   }
 
   deleteVendor() {
+    console.log('Configurations:', {});
+  }
+
+  searchVendorById() {
     console.log('Configurations:', {});
   }
 

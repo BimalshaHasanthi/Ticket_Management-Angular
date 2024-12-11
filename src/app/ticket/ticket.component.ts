@@ -103,13 +103,6 @@
 
 
 
-
-
-
-
-
-//////////////////////////////
-
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
@@ -150,7 +143,6 @@ export class TicketComponent {
 
   formGroup: FormGroup;
   
-  // Convert all arrays to use the proper interface
   customers: DropdownItem[] = [
     { name: 'New York', code: 'NY' },
     { name: 'Los Angeles', code: 'LA' },
@@ -160,6 +152,14 @@ export class TicketComponent {
   ];
 
   types: DropdownItem[] = [
+    { name: 'New York', code: 'NY' },
+    { name: 'Los Angeles', code: 'LA' },
+    { name: 'Chicago', code: 'CHI' },
+    { name: 'Houston', code: 'HOU' },
+    { name: 'Phoenix', code: 'PHX' }
+  ];
+
+  tickets: DropdownItem[] = [
     { name: 'New York', code: 'NY' },
     { name: 'Los Angeles', code: 'LA' },
     { name: 'Chicago', code: 'CHI' },
@@ -180,14 +180,13 @@ export class TicketComponent {
       selectedCustomer: [null],
       selectedType: [null],
       selectedVendor: [null],
+      selectedTicket:[null],
       totalTickets: [this.totalTickets],
       ticketReleaseRate: [this.ticketReleaseRate],
       customerRetrievalRate: [this.customerRetrievalRate],
       maxTicketCapacity: [this.maxTicketCapacity],
     });
   }
-
-  // ... rest of your methods remain the same
   
   editParameters() {
     console.log('Configurations:', {});
@@ -196,9 +195,11 @@ export class TicketComponent {
   stopSimulation() {
     console.log('Configurations:', {});
   }
+
   resetSimulation() {
     console.log('Configurations:', {});
   }
+
   startSimulation() {
     console.log('Configurations:', {});
   }

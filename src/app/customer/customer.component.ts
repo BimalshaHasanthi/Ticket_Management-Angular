@@ -19,8 +19,16 @@ export class CustomerComponent {
   value2: String = '';
   value3: String = '';
   value4: String = '';
-  value5: String = '';
 
+  value5: String = '';
+  value6: String = '';
+  value7: String = '';
+  value8: String = '';
+
+  value9: String = '';
+  value10: String = '';
+  value11: String = '';
+  value12: String = '';
 
   // product1: String = '';
   product1 = [
@@ -52,14 +60,20 @@ export class CustomerComponent {
 
   addCustomer() {
     console.log('Configurations:', {
-      // config1: this.config1,
-      // config2: this.config2,
-      // config3: this.config3,
-      // config4: this.config4,
       value1: this.value1,
       value2: this.value2,
       value3: this.value3,
       value4: this.value4,
+
+      value5: this.value5,
+      value6: this.value6,
+      value7: this.value7,
+      value8: this.value8,
+
+      value9: this.value9,
+      value10: this.value10,
+      value11: this.value11,
+      value12: this.value12,
     });
   }
 
@@ -68,6 +82,10 @@ export class CustomerComponent {
   }
 
   deleteCustomer() {
+    console.log('Configurations:', {});
+  }
+
+  searchCustomerById() {
     console.log('Configurations:', {});
   }
 
