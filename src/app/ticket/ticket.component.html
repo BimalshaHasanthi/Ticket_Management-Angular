@@ -26,13 +26,13 @@
         ></p-button>
         <p-button
           label="Pause"
-          icon="pi pi-pause"
-          (onClick)="pauseSimulation()"
-        ></p-button>
-        <p-button
-          label="Stop"
           icon="pi pi-stop"
           (onClick)="stopSimulation()"
+        ></p-button>
+        <p-button
+          label="Reset"
+          icon="pi pi-refresh"
+          (onClick)="resetSimulation()"
         ></p-button>
       </div>
     </p-card>
@@ -88,43 +88,36 @@
           [showClear]="true"
         ></p-dropdown> -->
         <p-dropdown
-  formControlName="selectedCustomer"
-  [options]="customers"
-  optionLabel="name"
-  optionValue="code"
-  placeholder="Select Customer"
-  [showClear]="true"
-></p-dropdown>
+          formControlName="selectedCustomer"
+          [options]="customers"
+          optionLabel="name"
+          optionValue="code"
+          placeholder="Select Customer"
+          [showClear]="true"
+        ></p-dropdown>
       </div>
     </form>
-    <form [formGroup]="formGroup">
+    <!-- <form [formGroup]="formGroup">
       <div class="form-group">
         <label for="retrieval-rate">Ticket</label>
-        <!-- <p-dropdown
+        <p-dropdown
           formControlName="selectedType"
           [options]="types"
           optionLabel="name"
+          optionValue="code"
           placeholder="Select Type"
           [showClear]="true"
-        ></p-dropdown> -->
-        <p-dropdown
-  formControlName="selectedType"
-  [options]="types"
-  optionLabel="name"
-  optionValue="code"
-  placeholder="Select Type"
-  [showClear]="true"
-></p-dropdown>
+        ></p-dropdown>
       </div>
-    </form>
+    </form> -->
     <form [formGroup]="formGroup">
       <div class="form-group">
-        <label for="retrieval-rate">Vendor</label>
+        <label for="retrieval-rate">Ticket</label>
         <p-dropdown
           formControlName="selectedVendor"
           [options]="vendors"
           optionLabel="name"
-          placeholder="Select Vendor"
+          placeholder="Select Ticket"
           [showClear]="true"
         ></p-dropdown>
       </div>
@@ -140,17 +133,17 @@
     <h2>Add Ticket</h2>
     <form [formGroup]="formGroup">
       <div class="form-group">
-        <label for="retrieval-rate">Ticket Id</label>
+        <label for="retrieval-rate">Vendor</label>
         <p-dropdown
-          formControlName="selectedCustomer"
+          formControlName="selectedVendor"
           [options]="customers"
           optionLabel="name"
-          placeholder="Select Customer"
+          placeholder="Select Vendor"
           [showClear]="true"
         ></p-dropdown>
       </div>
     </form>
-    <form [formGroup]="formGroup">
+    <!-- <form [formGroup]="formGroup">
       <div class="form-group">
         <label for="retrieval-rate">Type</label>
         <p-dropdown
@@ -161,19 +154,27 @@
           [showClear]="true"
         ></p-dropdown>
       </div>
-    </form>
-    <form [formGroup]="formGroup">
+    </form> -->
+    <!-- <form [formGroup]="formGroup">
       <div class="form-group">
         <label for="retrieval-rate">Price</label>
         <p-dropdown
           formControlName="selectedVendor"
           [options]="vendors"
           optionLabel="name"
-          placeholder="Select Vendor"
+          placeholder="Select Price"
           [showClear]="true"
         ></p-dropdown>
       </div>
-    </form>
+    </form> -->
+    <!-- <div class="form-group">
+      <label for="ticket-release-rate">Price</label>
+      <input
+        pInputText
+        id="ticket-release-rate"
+        [(ngModel)]="ticketReleaseRate"
+      />
+    </div> -->
     <p-button
       label="Add Ticket"
       icon="pi pi-plus"

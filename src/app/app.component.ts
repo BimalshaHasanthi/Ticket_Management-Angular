@@ -10,6 +10,7 @@ import { MenubarModule } from 'primeng/menubar';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  title = 'Frontend';
   constructor(private router: Router) {}
 
   items = [
@@ -43,7 +44,7 @@ export class AppComponent {
     // },
     {
       label: 'Ticket',
-      icon: 'pi pi-users',
+      icon: 'pi pi-ticket',
       command: () => {
         this.router.navigate(['/ticket']);
       },

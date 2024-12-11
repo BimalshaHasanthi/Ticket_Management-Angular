@@ -196,7 +196,7 @@ export class TicketComponent {
   stopSimulation() {
     console.log('Configurations:', {});
   }
-  pauseSimulation() {
+  resetSimulation() {
     console.log('Configurations:', {});
   }
   startSimulation() {
