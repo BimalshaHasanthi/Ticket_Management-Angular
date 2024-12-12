@@ -28,7 +28,12 @@
     <h2>Edit Vendor</h2>
     <div class="form-group">
       <label for="edit-id">Vendor ID</label>
-      <input pInputText id="edit-id" [(ngModel)]="value5" (keydown.enter)="searchVendorById()"/>
+      <input
+        pInputText
+        id="edit-id"
+        [(ngModel)]="value5"
+        (keydown.enter)="searchVendorById(value5)"
+      />
     </div>
     <div class="form-group">
       <label for="edit-name">Vendor Name</label>
@@ -54,7 +59,12 @@
     <h2>Delete Vendor</h2>
     <div class="form-group">
       <label for="delete-id">Vendor ID</label>
-      <input pInputText id="delete-id" [(ngModel)]="value9"  (keydown.enter)="searchVendorById()"/>
+      <input
+        pInputText
+        id="delete-id"
+        [(ngModel)]="value9"
+        (keydown.enter)="searchVendorById(value9)"
+      />
     </div>
     <div class="form-group">
       <label for="delete-name">Vendor Name</label>

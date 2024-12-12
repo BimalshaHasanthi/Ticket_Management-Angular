@@ -39,7 +39,6 @@
 //   customerRetrievalRate: number = 0;
 //   maxTicketCapacity: number = 0;
 
-
 //   formGroup: FormGroup;
 //   types: string[]; // Array of city names
 //   vendors: string[]; // Array of city names
@@ -100,9 +99,6 @@
 //   }
 // }
 
-
-
-
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
@@ -142,37 +138,37 @@ export class TicketComponent {
   maxTicketCapacity: number = 0;
 
   formGroup: FormGroup;
-  
+
   customers: DropdownItem[] = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Los Angeles', code: 'LA' },
-    { name: 'Chicago', code: 'CHI' },
-    { name: 'Houston', code: 'HOU' },
-    { name: 'Phoenix', code: 'PHX' }
+    { name: 'Alice Johnson', code: 'AJ' },
+    { name: 'Bob Smith', code: 'BS' },
+    { name: 'Charlie Brown', code: 'CB' },
+    { name: 'David Lee', code: 'DL' },
+    { name: 'Emily Wilson', code: 'EW' },
   ];
 
   types: DropdownItem[] = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Los Angeles', code: 'LA' },
-    { name: 'Chicago', code: 'CHI' },
-    { name: 'Houston', code: 'HOU' },
-    { name: 'Phoenix', code: 'PHX' }
+    { name: 'Alice Johnson', code: 'AJ' },
+    { name: 'Bob Smith', code: 'BS' },
+    { name: 'Charlie Brown', code: 'CB' },
+    { name: 'David Lee', code: 'DL' },
+    { name: 'Emily Wilson', code: 'EW' },
   ];
 
   tickets: DropdownItem[] = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Los Angeles', code: 'LA' },
-    { name: 'Chicago', code: 'CHI' },
-    { name: 'Houston', code: 'HOU' },
-    { name: 'Phoenix', code: 'PHX' }
+    { name: 'Alice Johnson', code: 'AJ' },
+    { name: 'Bob Smith', code: 'BS' },
+    { name: 'Charlie Brown', code: 'CB' },
+    { name: 'David Lee', code: 'DL' },
+    { name: 'Emily Wilson', code: 'EW' },
   ];
 
   vendors: DropdownItem[] = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Los Angeles', code: 'LA' },
-    { name: 'Chicago', code: 'CHI' },
-    { name: 'Houston', code: 'HOU' },
-    { name: 'Phoenix', code: 'PHX' }
+    { name: 'Alice Johnson', code: 'AJ' },
+    { name: 'Bob Smith', code: 'BS' },
+    { name: 'Charlie Brown', code: 'CB' },
+    { name: 'David Lee', code: 'DL' },
+    { name: 'Emily Wilson', code: 'EW' },
   ];
 
   constructor(private fb: FormBuilder) {
@@ -180,14 +176,14 @@ export class TicketComponent {
       selectedCustomer: [null],
       selectedType: [null],
       selectedVendor: [null],
-      selectedTicket:[null],
+      selectedTicket: [null],
       totalTickets: [this.totalTickets],
       ticketReleaseRate: [this.ticketReleaseRate],
       customerRetrievalRate: [this.customerRetrievalRate],
       maxTicketCapacity: [this.maxTicketCapacity],
     });
   }
-  
+
   editParameters() {
     console.log('Configurations:', {});
   }

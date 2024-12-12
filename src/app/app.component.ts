@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { MenubarModule } from 'primeng/menubar';
@@ -6,7 +7,7 @@ import { MenubarModule } from 'primeng/menubar';
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  imports: [MenubarModule, RouterOutlet],
+  imports: [MenubarModule, RouterOutlet, CommonModule],
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
